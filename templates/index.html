@@ -36,7 +36,7 @@
                         <span style="position: relative; float: right;">
                             <a href="{% url 'com' data.id %}" class="btn btn-success"><i class="fa fa-check"></i> Mark as Done</a>
                             <a href="{% url 'delete_item' data.id  %}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
-                            <a  href='' class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+                            <a  href='{% url 'edit_page'  data.id %}' class="btn btn-primary"><i class="fa fa-pencil"></i></a>
                         </span>
                        
                     </div>

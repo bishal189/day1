@@ -42,4 +42,27 @@ def uncompleted(request,id):
     data.is_completed=False
     data.save()
     return redirect('home')
+
+
+def edit(request,id):
+    if request.method=='POST':
+        data=request.POST['name'] 
+        
+        todo_data=Todo.objects.get(id=id)
+        todo_data.text=data
+        todo_data.save()
+        
+        return redirect('home')
+    
+    else:
+        todo_data=Todo.objects.get(id=id)
+        context={
+            'todo_data':todo_data,
+            'id':id
+        }
+        return render(request,'edit.html',context)
+    
+    
+        
+        
     

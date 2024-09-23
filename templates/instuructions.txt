@@ -1,0 +1,50 @@
+
+
+->project setup 
+-- folder with your name 
+-- virual env optional //optional
+-- if virual env :
+https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
+
+check garna ko lage pip freeze 
+pip install django
+
+
+--else part hai
+
+already djnago,python 
+
+-- project banuney 
+django-admin startproject yourchoice(your choice name)
+purai setup folder haru auxa 
+so project run garna ko lage manage.py vako thau mah pugnai parxa 
+
+ aba manage.py vako thau mah pugna chai cd foldername
+
+
+
+ yeti vayesi hami project run garna sakxau 
+
+ project run garna ko lage
+ --python manage.py runserver 
+-- default page dakhinxa
+
+
+apps for main project 
+
+
+python manage.py startapp yourchoice(choice)
+tespaxi hami la app banunu bitikai settings mah janey ani installed app mah register garney
+
+-----=>
+aru vanako coding part 
+urls
+views 
+logic 
+model 
+admin.py register 
+
+
+----etc 
+
+

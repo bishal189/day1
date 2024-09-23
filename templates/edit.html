@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div style='display:flex;justify-content:center;align-items: center;margin-top:200px;'>
+        <form action="{% url 'edit_page' id %}" method="POST">
+            {% csrf_token %}
+            <input type="text" name='name' required  style='padding:20px;' value="{{todo_data.text}}">
+            <button type='submit' style='padding:20px'>edit</button>
+        </form>
+    </div>
+
+    
+    
+</body>
+</html>
